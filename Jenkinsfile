@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    tools {
-        nodejs 'NodeJS 14' // The name you gave in the NodeJS configuration
-    }
     stages {
         stage('Clone Repository') {
             steps {
