@@ -1,5 +1,8 @@
 pipeline {
     agent any
+     tools {
+        nodejs 'NodeJS 14' // Ensure this matches the name configured in Jenkins
+    }
     stages {
         stage('Clone Repository') {
             steps {
